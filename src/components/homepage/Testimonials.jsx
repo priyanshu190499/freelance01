@@ -43,7 +43,7 @@ const Testimonials = () => {
               <hr className="border-t border-[#444] mb-6" />
 
               {/* Image + Text */}
-              <div className="flex items-start gap-4 ">
+              <div className="flex items-start gap-4 z-2">
                 <img
                   src={t.img}
                   alt={t.name}
@@ -53,6 +53,28 @@ const Testimonials = () => {
                   {t.text}
                 </p>
               </div>
+
+                   {/* Moving Glass Effect */}
+ <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+  <div
+    className="absolute top-[-80%] left-[-100%] rotate-[20deg] w-[200%] h-[200%]
+      transition-all duration-700 ease-out
+      group-hover:left-[-60%]"
+    style={{
+      background: `linear-gradient(
+        to right,
+        rgba(220, 95, 0, 0.2) 0%,
+        rgba(220, 95, 0, 0.1) 30%,
+        rgba(220, 95, 0, 0.2) 50%,
+        rgba(220, 95, 0, 0.1) 70%,
+        rgba(220, 95, 0, 0.1) 100%
+      )`
+    }}
+  ></div>
+</div>
+
+
+
 
               
             </div>

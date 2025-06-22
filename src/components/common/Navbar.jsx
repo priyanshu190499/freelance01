@@ -18,7 +18,7 @@ const Navbar = () => {
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className="absolute top-10 pt-[12px] pb-[12px] left-1/2 -translate-x-1/2 w-[92%] bg-[#1f1f1f] rounded-md z-40 shadow-md"
+        className="absolute top-10 pt-[10px] pb-[10px] left-1/2 -translate-x-1/2 w-[82%] bg-[#1f1f1f] rounded-md z-40 shadow-md"
       >
         <div className="flex items-center justify-between px-8 py-4">
           {/* Logo */}
@@ -27,14 +27,14 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Nav Items */}
-          <ul className="hidden  custom-show-on-desktop space-x-6 uppercase text-sm tracking-wide">
+          <ul className="hidden  custom-show-on-desktop space-x-10 uppercase text-sm tracking-wide">
             {navItems.map((item) => {
               const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
               const isActive = location.pathname === path;
               return (
                 <li key={item}>
                   <NavLink to={path} className="relative group py-1 inline-block">
-                    <span className={`transition-colors text-xl duration-300 ${isActive ? "text-white" : "text-white"}`}>
+                    <span className={`transition-colors text-l duration-300 ${isActive ? "text-white" : "text-white"}`}>
                       {item}
                     </span>
                     <span

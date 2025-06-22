@@ -6,37 +6,34 @@ const Hero = () => {
   return (
    <section className="relative  bg-black text-white overflow-hidden">
   {/* Background */}
-  <img
+ <img
   src={bgImage}
   alt="Background"
-  className="absolute top-[-3%] inset-0 w-full h-full object-contain object-center z-0"
+  className="absolute top-[-100px] md:top-[-60px] sm:top-[-40px] xs:top-[-20px] inset-0 w-full h-full object-contain object-center z-0"
 />
 
 
-  <div className="flex flex-col justify-end ">
+
+  <div className="flex flex-col justify-end pt-48 z-1">
 
   {/* Hero Content */}
- <div className="relative h-screen z-10 pt-60 text-left custom-hero-grid " >
+ <div className="flex flex-col py-8  justify-end  lg:flex-row lg:items-stretch h-[60vh] z-1">
   {/* AIM */}
-  <div className="order-1 h-full flex justify-start items-start lg:justify-center" >
-    <h1  className="text-[64px] lg:text-[200px] font-extrabold uppercase text-white/80 "
- >AIM</h1 >
-  </div>
-
-  {/* SKY */}
-  <div className="order-2 h-full flex justify-start items-start lg:justify-center lg:items-end" >
-    <h1 className="text-[64px] lg:text-[200px] font-extrabold uppercase text-white/80">SKY</h1>
+  <div className="order-1 lg:order-1 flex justify-start items-start lg:justify-center lg:w-1/3">
+    <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[130px] xl:text-[180px] font-extrabold uppercase text-white">
+      AIM
+    </h1>
   </div>
 
   {/* CENTER TEXT */}
-  <div className="order-3 flex flex-col justify-around h-full " >
+  <div className="order-3 lg:order-2 flex flex-col justify-center gap-6 lg:w-1/3 ">
     <p className="text-base lg:text-xl leading-relaxed max-w-md">
       We are a creative agency committed to delivering innovative solutions,
       from concept to execution, ensuring your brand's success and growth.
     </p>
-    <Link
+    <a
       href="#"
-      className="inline-flex items-center justify-start gap-2 text-white  hover:text-gray-300 transition"
+      className="inline-flex items-center justify-start gap-2 text-white hover:text-gray-300 transition"
     >
       <span className="border-b border-white">Projects</span>
       <img
@@ -44,12 +41,20 @@ const Hero = () => {
         alt="arrow"
         className="w-4 h-4"
       />
-    </Link>
+    </a>
     <div className="text-lg lg:text-xl uppercase tracking-wider font-light border-l-4 border-[#dc5f00] pl-4">
       Where Innovation <br /> Meets Design.
     </div>
   </div>
+
+  {/* SKY */}
+  <div className="order-2 lg:order-3 flex justify-start items-start lg:justify-center lg:items-end lg:w-1/3">
+    <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[150px] xl:text-[180px] font-extrabold uppercase text-white">
+      SKY
+    </h1>
+  </div>
 </div>
+
 
 
   {/* Marquee */}

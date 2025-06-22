@@ -16,7 +16,7 @@ function App() {
     
     
     <Router>
-      <div className="bg-black text-white min-h-screen w-full font-sans pl-[4%] pr-[4%] custom-main">
+      <div className="bg-black text-white min-h-screen w-full font-sans pl-[9%] pr-[9%]  custom-main">
         <Cursor />
         <Navbar />
         
