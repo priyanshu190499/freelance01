@@ -1,0 +1,102 @@
+ /* Custom Style for 991px breakpoint */
+
+    .custom-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0;
+}
+
+@media (min-width: 991px) {
+  .custom-hero-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 0;
+  }
+
+  /* Reorder only on 991px+ */
+  .custom-hero-grid > div:nth-child(1) { order: 1; } /* AIM */
+  .custom-hero-grid > div:nth-child(2) { order: 3; } /* SKY */
+  .custom-hero-grid > div:nth-child(3) { order: 2; } /* Center Text */
+}
+
+  
+  /* Animation styling */
+  
+      .marquee-track {
+        animation: scroll-marquee 25s linear infinite;
+        min-width: 200%;
+        will-change: transform;
+      }
+
+      .group:hover .marquee-track {
+        animation-play-state: paused;
+      }
+
+      @keyframes scroll-marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+    /* Glass effect in who we are */
+
+.custom-glass-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 111, 0, 0.02),
+    rgba(255, 111, 0, 0.15),
+    rgba(255, 111, 0, 0.02)
+  );
+  transform: skewX(-40deg) translateX(-80%);
+  transition:  left 0.3s ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.custom-glass-hover:hover::after {
+  /* transform: skewX(-50deg) translateX(90%); */
+  /* height: 330%; */
+  left:110%
+}
+
+
+/* Testimonials section */
+
+/* Custom orange skew-glow effect */
+.after-effect::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: linear-gradient(
+    135deg,
+    rgba(220, 95, 0, 0.1),
+    rgba(220, 95, 0, 0.2),
+    rgba(220, 95, 0, 0.1)
+  );
+  transform: skewX(-20deg) rotate(-10deg);
+  z-index: -1;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+  filter: blur(20px);
+}
+
+.group:hover .after-effect::after {
+  transform: skewX(-10deg) rotate(5deg);
+  opacity: 0.8;
+  /* filter: blur(25px) */
+  box-shadow: 0 0 30px #dc5f00;
+}
+
+
