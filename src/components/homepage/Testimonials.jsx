@@ -20,9 +20,10 @@ const Testimonials = () => {
     <section className="bg-black text-white py-16">
       <div className="space-y-12  mx-auto ">
         {/* Heading */}
-        <h2 className="text-[100px] font-extrabold uppercase relative inline-block shadow-[0_4px_3px_-3px_#dc5f00] w-full">
-          Testimonials
-        </h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] w-full font-bold uppercase relative inline-block shadow-[0_4px_3px_-3px_#dc5f00]">
+  Testimonials
+</h2>
+
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -53,8 +54,7 @@ const Testimonials = () => {
                 </p>
               </div>
 
-              {/* After-pseudo glow effect */}
-              <div className="absolute inset-0 z-0 after-effect"></div>
+              
             </div>
           ))}
         </div>

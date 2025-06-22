@@ -97,13 +97,7 @@ const SparkleCursor = () => {
         />
       ))}
 
-      {/* Fade animation */}
-      <style jsx global>{`
-        @keyframes fadeOut {
-          0% { opacity: 0.5; transform: scale(1); }
-          100% { opacity: 0; transform: scale(2); }
-        }
-      `}</style>
+      
     </>
   );
 };

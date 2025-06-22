@@ -49,9 +49,10 @@ const Insights = () => {
   return (
     <section className="bg-black text-white py-16">
       <div className="space-y-12">
-        <h2 className="text-[100px] font-extrabold uppercase shadow-[0_4px_3px_-3px_#dc5f00]">
-          Insights
-        </h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold uppercase shadow-[0_4px_3px_-3px_#dc5f00]">
+  Insights
+</h2>
+
 
         <div className="flex flex-col gap-10">
           {blogPosts.map((post, index) => (

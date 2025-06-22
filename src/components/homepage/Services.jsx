@@ -15,9 +15,10 @@ const Services = () => {
     <section className="bg-black text-white py-16 ">
   <div className=" space-y-10">
     
-  <h2 className="text-[100px] w-full font-extrabold uppercase  inline-block  shadow-[0_4px_3px_-3px_#dc5f00] ">
+  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] w-full font-bold uppercase inline-block shadow-[0_4px_3px_-3px_#dc5f00]">
   Services
 </h2>
+
 
 
     <div >

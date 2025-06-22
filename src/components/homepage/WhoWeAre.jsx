@@ -2,13 +2,15 @@
 import plus from "../../assets/plus.png"
 import hwa1 from "../../assets/hwa1.jpg"
 import hwa2 from "../../assets/hwa2.jpg"
+
 const WhoWeAre = () => {
   return (
     <section className=" py-16 bg-black text-white">
   <div className=" mx-auto space-y-16">
-    <h2 className="text-[100px] w-full font-extrabold uppercase inline-block shadow-[0_4px_3px_-3px_#dc5f00] ">
-      Who We Are
-    </h2>
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] w-full font-bold uppercase inline-block shadow-[0_4px_3px_-3px_#dc5f00]">
+  Who We Are
+</h2>
+
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
       {/* Mission */}
@@ -74,21 +76,7 @@ const WhoWeAre = () => {
     </div>
   </div>
 
-  {/* Glow sweep animation */}
-  <style jsx>{`
-    @keyframes sweep {
-      0% {
-        transform: translate(-100%, -100%);
-      }
-      100% {
-        transform: translate(100%, 100%);
-      }
-    }
-
-    .animate-sweep {
-      animation: sweep 2s ease-in-out forwards;
-    }
-  `}</style>
+ 
 </section>
 
   );

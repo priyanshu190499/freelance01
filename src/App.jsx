@@ -13,8 +13,10 @@ import Home from "./pages/Home.jsx";
 
 function App() {
   return (
+    
+    
     <Router>
-      <div className="bg-black text-white min-h-screen font-sans px-30">
+      <div className="bg-black text-white min-h-screen w-full font-sans pl-[4%] pr-[4%] custom-main">
         <Cursor />
         <Navbar />
         

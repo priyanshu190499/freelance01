@@ -1,2 +1,35 @@
 @import "tailwindcss";
 
+
+
+/* Fade animation for cursor*/
+     
+@keyframes fadeOut 
+{
+  0% { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 0; transform: scale(2); }
+}
+
+/* Navbar responsiveness */
+/* === Custom Media Queries for Exact 990px Control === */
+@media (max-width: 990px) {
+  .custom-hide-on-mobile {
+    display: none !important;
+  }
+
+  .custom-show-on-mobile {
+    display: block !important;
+  }
+}
+
+@media (min-width: 991px) {
+  .custom-hide-on-desktop {
+    display: none !important;
+  }
+
+  .custom-show-on-desktop {
+    display: flex !important;
+  }
+}
+
+     

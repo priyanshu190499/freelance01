@@ -27,16 +27,17 @@ const Work = () => {
     <section className=" py-16 bg-black text-white">
       {/* Header */}
       <div className="flex items-center justify-between mb-12 shadow-[0_4px_3px_-3px_#dc5f00] w-full">
-        <h2 className="text-[100px] font-extrabold uppercase relative inline-block ">
-          WORK
-         
-        </h2>
+       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold uppercase relative inline-block">
+  WORK
+</h2>
+
         <Link
-          href="#"
-          className="text-md tracking-wider uppercase hover:text-orange-500 transition"
-        >
-          All Projects
-        </Link>
+  href="#"
+  className="text-sm sm:text-base md:text-lg lg:text-xl tracking-wider uppercase hover:text-orange-500 transition"
+>
+  All Projects
+</Link>
+
       </div>
 
       {/* Cards */}

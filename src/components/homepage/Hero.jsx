@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 import bgImage from "../../assets/hero-bg.jpg";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const Hero = () => {
   <img
   src={bgImage}
   alt="Background"
-  className="absolute top-0 inset-0 w-full h-full object-contain object-center z-0"
+  className="absolute top-[-3%] inset-0 w-full h-full object-contain object-center z-0"
 />
 
 
