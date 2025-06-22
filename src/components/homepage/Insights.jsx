@@ -94,8 +94,15 @@ const Insights = () => {
                 />
               </div>
 
-              {/* Moving Glass Effect */}
-              <div className="absolute inset-0 pointer-events-none z-0 after:content-[''] after:absolute after:top-full after:left-0 after:w-[150%] after:h-[200%] after:skew-x-[-30deg] after:bg-gradient-to-tr after:from-white/5 after:via-white/10 after:to-white/5 after:transition-all after:duration-700 group-hover:after:top-[-50%]" />
+           {/* Moving Glass Effect */}
+<div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+  <div className="absolute w-[200%] h-[200%] rotate-[30deg] -left-[80%] -bottom-[40%] 
+              bg-gradient-to-r from-white/2 via-white/10 to-white/2 
+              transition-all duration-700 group-hover:top-0 group-hover:left-0" />
+</div>
+
+
+
             </a>
           ))}
         </div>

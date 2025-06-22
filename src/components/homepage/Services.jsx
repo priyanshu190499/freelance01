@@ -4,12 +4,11 @@ import service02 from "../../assets/service02.jpg"
 import service03 from "../../assets/service03.jpg"
 import service04 from "../../assets/service04.jpg"
 const services = [
-  "BRANDING DESIGN",
-  "WEEDESIGN",
-  "COUNTRY",
-  "MOTION DESIGN",
-  "MARKETING"
-];
+        { number: '01', title: 'Branding Design', s_img: service01 },
+        { number: '02', title: 'Web Design', s_img: service02 },
+        { number: '03', title: 'Motion Design', s_img: service03 },
+        { number: '04', title: 'Marketing', s_img: service04 },
+      ]
 
 const Services = () => {
   return (
@@ -22,12 +21,7 @@ const Services = () => {
 
 
     <div >
-      {[
-        { number: '01', title: 'Branding Design', s_img: service01 },
-        { number: '02', title: 'Web Design', s_img: service02 },
-        { number: '03', title: 'Motion Design', s_img: service03 },
-        { number: '04', title: 'Marketing', s_img: service04 },
-      ].map((service, index) => (
+      {services.map((service, index) => (
         <div
           key={index}
          

@@ -52,7 +52,7 @@
   height: 150%;
   background: linear-gradient(
     135deg,
-    rgba(255, 111, 0, 0.02),
+    rgba(0, 0, 0, 0.02),
     rgba(255, 111, 0, 0.15),
     rgba(255, 111, 0, 0.02)
   );
@@ -98,5 +98,37 @@
   /* filter: blur(25px) */
   box-shadow: 0 0 30px #dc5f00;
 }
+
+/* Footer glass effect */
+
+@keyframes float-glass {
+  0% {
+    left: -140%;
+    bottom: -100%;
+  }
+  50% {
+    left: 0%;
+    bottom: 0%;
+  }
+  100% {
+    left: 80%;
+    bottom: 40%;
+  }
+}
+
+.moving-glass {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.01) 0%,
+    rgba(255, 255, 255, 0.02) 30%,
+    rgba(220, 95, 0, 0.08) 50%,
+    rgba(255, 255, 255, 0.02) 70%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  animation: float-glass 10s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
 
 
